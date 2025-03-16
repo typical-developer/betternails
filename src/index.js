@@ -2,6 +2,7 @@ class Control {
     static init() {
         Control.handleContactFormSubmit()
         Control.setDynamicContent()
+        Control.handleAccordionClicks();
     }
 
     static company = {
@@ -9,7 +10,7 @@ class Control {
         name: 'Nails by Betty',
         address: 'RSU Backgate, Port Harcourt, Rivers State',
         phone: '+2347045942462',
-        phone_formatted: '(234) 7045-942-462',
+        phone_formatted: '(+234) 7045-942-462',
         email: '',
     }
 
@@ -25,8 +26,9 @@ class Control {
     }
 
     static setDynamicContent() {
-        document.querySelector('#company-duration').textContent = Control.getCompanyDuration();
-
+        document.querySelectorAll('[x-company-duration]').forEach(element => {
+            element.innerText = Control.getCompanyDuration();
+        });
         document.querySelectorAll('[x-company-address]').forEach(element => {
             element.innerText = Control.company.address;
         });
@@ -71,6 +73,24 @@ class Control {
                 console.error(error);
             }
         });
+    }
+
+    static handleAccordionClicks() {
+        document.querySelectorAll('[x-accordion-button]').forEach(element => {
+            element.addEventListener('click', function () {
+                let parent = element.closest('[x-accordion]');
+                let content = element.nextElementSibling;
+                let isOpen = !content.classList.contains("hidden");
+    
+                parent.querySelectorAll("p").forEach(p => p.classList.add("hidden"));
+                parent.querySelectorAll("[x-accordion-button] [x-accordion-button-sign]").forEach(span => span.textContent = "+");
+                
+                if (!isOpen) {
+                    content.classList.remove("hidden");
+                    element.querySelector("[x-accordion-button-sign]").textContent = "-";
+                }
+            })
+        })
     }
 }
 

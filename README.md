@@ -2,6 +2,8 @@
 
 This is a single‑page static website designed for a nail technician operating as "Nails by Betty." The site uses [Tailwind CSS](https://tailwindcss.com/) for styling and [Font Awesome](https://fontawesome.com/) for icons, ensuring a clean and responsive design optimized for local SEO.
 
+![Preview](/assets/screenshots/1.png)
+
 ## Features
 - **Header/Hero:** Prominent display of the business name and tagline with a call-to-action.
 - **About:** Information about Betty, her experience, and qualifications.
