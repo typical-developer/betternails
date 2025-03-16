@@ -24,4 +24,4 @@ This project is licensed under the GNU GPL v3. Under this license, you are free 
 Please ensure that any derivative works are also distributed under the GNU GPL v3 license.
 
 ## Getting Started
-Simply open the `index.html` file in your browser to view the website. You can customize the content, replace placeholder images, and update contact details as needed.
+Simply open the `index.html` file in your browser to view the website. You can customize the content, replace images, and update contact details as needed.
