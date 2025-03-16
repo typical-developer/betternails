@@ -1,6 +1,7 @@
 class Control {
     static init() {
         Control.handleContactFormSubmit()
+        Control.setDynamicContent()
     }
 
     static company = {
@@ -8,6 +9,7 @@ class Control {
         name: 'Nails by Betty',
         address: 'RSU Backgate, Port Harcourt, Rivers State',
         phone: '+2347045942462',
+        phone_formatted: '(234) 7045-942-462',
         email: '',
     }
 
@@ -22,20 +24,18 @@ class Control {
         return `${companyStartedYear} - ${currentYear}`;
     }
 
+    static setDynamicContent() {
+        document.querySelector('#company-duration').textContent = Control.getCompanyDuration();
+
+        document.querySelectorAll('[x-company-address]').forEach(element => {
+            element.innerText = Control.company.address;
+        });
+        document.querySelectorAll('[x-company-phone]').forEach(element => {
+            element.innerText = Control.company.phone_formatted;
+        });
+    }
+
     static handleContactFormSubmit() {
-        function updateStatus(message, isSuccess) {
-            let status = document.getElementById("form-status");
-
-            status.innerHTML = message;
-            if (isSuccess) {
-                status.classList.remove("text-red-500");
-                status.classList.add("text-green-500");
-            } else {
-                status.classList.remove("text-green-500");
-                status.classList.add("text-red-500");
-            }
-        }
-
         let form = document.getElementById("contact-form");
 
         form.addEventListener("submit", async function (e) {
@@ -46,7 +46,7 @@ class Control {
             let dataObject = Object.fromEntries(formData.entries());
 
             try {
-                let response = await fetch(form.action, {
+                let response = await fetch('https://formspree.io/f/xdkekeqg', {
                     method: form.method,
                     headers: {
                         'Content-Type': 'application/json', // Send JSON data
@@ -56,18 +56,18 @@ class Control {
                 });
 
                 if (response.ok) {
-                    updateStatus("Thanks for your reaching out!", true);
+                    Toastify({text: "Thanks for reaching out!", duration: 3000, gravity: "bottom", position: "center", backgroundColor: "#15803D",}).showToast();
                     form.reset();
                 } else {
                     let result = await response.json();
                     if (result.errors) {
-                        updateStatus(result.errors.map(error => error.message).join(", "), false);
+                        Toastify({text: result.errors.map(error => error.message).join(", "), duration: 5000, gravity: "bottom", position: "center", backgroundColor: "#B91C1C", }).showToast();
                     } else {
-                        updateStatus("Oops! There was a problem submitting your form", false);
+                        Toastify({text: "Oops! There was a problem submitting your form", duration: 5000, gravity: "bottom", position: "center", backgroundColor: "#B91C1C", }).showToast();
                     }
                 }
             } catch (error) {
-                updateStatus("Oops! There was a problem submitting your form", false);
+                Toastify({text: "Oops! There was a problem submitting your form", duration: 5000, gravity: "bottom", position: "center", backgroundColor: "#B91C1C", }).showToast();
                 console.error(error);
             }
         });
@@ -86,6 +86,4 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         });
     });
-
-    document.querySelector('#company-duration').textContent = Control.getCompanyDuration();
 });
