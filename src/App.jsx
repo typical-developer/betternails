@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button"
+import 'boxicons/css/boxicons.min.css'
 
 export default function App() {
   return (
