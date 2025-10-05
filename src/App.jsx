@@ -1,5 +1,5 @@
-import {useEffect} from react;
-import AOS from 'aos';
+import {useEffect} from 'react'
+import Aos from 'aos'
 import 'aos/dist/aos.css'
 
 import 'boxicons/css/boxicons.min.css'
