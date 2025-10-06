@@ -1,3 +1,16 @@
+/* Google Font | Montserrat, Meow Script */
+@import url('https://fonts.googleapis.com/css2?family=Meow+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  font-weight: 400;
+  font-family: "Montserrat", system-ui, -apple-system;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 @import 'tailwindcss';
 @import "tw-animate-css";
 
@@ -119,3 +132,7 @@
   }
 }
 
+@theme {
+  --font-display: "Montserrat";
+  --font-logo: "Meow Script"
+}

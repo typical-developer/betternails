@@ -19,3 +19,7 @@
 - Contact
 - FAQ
 
+# Things to source 
+- cursive font for 'Nails by Betty'
+- base font 
+
