@@ -1,12 +1,16 @@
 import cn from "../utils/cn";
 
-export default function Container(className) {
+export default function Container({className,children}) {
     return(
         <>
-        div.{cn(
-            "custom-container",
-            className
-        )}
+            <div className={
+                cn(
+                    "custom-container",
+                    {className}
+                )
+            }>
+                {children}
+            </div>
         </>
     );   
 }

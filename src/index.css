@@ -3,6 +3,7 @@
 
 :root {
   font-family: "Montserrat", system-ui, -apple-system;
+  color: black;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -156,8 +157,6 @@
 
 
 /* custom component classes */
-@layer components {
-  .custom-container {
+@utility custom-container {
     @apply mx-auto container px-4 max-w-[1400px]
   }
-}

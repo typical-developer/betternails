@@ -1,7 +1,5 @@
-import { Link } from "react-router-dom";
 import cn from "../utils/cn";
 import Logo from "./Logo";
-import { Button } from "@/components/ui/button";
 import NavItems from "./NavItems"
 
 export default function Navbar({className}){
@@ -15,7 +13,6 @@ export default function Navbar({className}){
             }>
                 <Logo className="text-black text-3xl font-extrabold  text-hover-to-pink" />
                 <NavItems className="hidden lg:flex text-hover-to-pink font-medium text-[15.5px]" />
-                <Button variant="solidPink" className="cursor-pointer"><i className="bx bxs-pen"></i> Book Now</Button>
             </nav>
         </>
     );
