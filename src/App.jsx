@@ -3,6 +3,7 @@ import Aos from 'aos'
 import 'aos/dist/aos.css'
 
 import 'boxicons/css/boxicons.min.css'
+import Navbar from './components/Navbar'
 
 export default function App() {
   useEffect(() => {
@@ -19,7 +20,7 @@ export default function App() {
 
   return (
     <>
-    <h1 className="text-purple-600">Hello World from @typicaldeveloper</h1>
+    <Navbar />
     </>
   )
 }

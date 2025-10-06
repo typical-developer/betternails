@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Meow+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-  font-weight: 400;
   font-family: "Montserrat", system-ui, -apple-system;
 
   font-synthesis: none;
@@ -132,7 +131,33 @@
   }
 }
 
+/* Custom Theme */
 @theme {
   --font-display: "Montserrat";
   --font-logo: "Meow Script"
+}
+
+/* Custom Utility Classes */
+@utility flex-between {
+  @apply flex items-center justify-between
+}
+
+@utility flex-center {
+  @apply flex items-center justify-center
+}
+
+@utility transition-fast {
+  @apply duration-150 ease-out
+}
+
+@utility text-hover-to-pink{
+  @apply transition-fast transition-colors hover:text-pink-500
+}
+
+
+/* custom component classes */
+@layer components {
+  .custom-container {
+    @apply mx-auto container px-4 max-w-[1400px]
+  }
 }
