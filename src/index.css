@@ -1,3 +1,16 @@
+/* Google Font | Montserrat, Meow Script */
+@import url('https://fonts.googleapis.com/css2?family=Meow+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  font-family: "Montserrat", system-ui, -apple-system;
+  color: black;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 @import 'tailwindcss';
 @import "tw-animate-css";
 
@@ -119,3 +132,31 @@
   }
 }
 
+/* Custom Theme */
+@theme {
+  --font-display: "Montserrat";
+  --font-logo: "Meow Script"
+}
+
+/* Custom Utility Classes */
+@utility flex-between {
+  @apply flex items-center justify-between
+}
+
+@utility flex-center {
+  @apply flex items-center justify-center
+}
+
+@utility transition-fast {
+  @apply duration-150 ease-out
+}
+
+@utility text-hover-to-pink{
+  @apply transition-fast transition-colors hover:text-pink-500
+}
+
+
+/* custom component classes */
+@utility custom-container {
+    @apply mx-auto container px-4 max-w-[1400px]
+  }

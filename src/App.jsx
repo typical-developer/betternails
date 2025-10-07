@@ -1,8 +1,10 @@
-import {useEffect} from react;
-import AOS from 'aos';
+import {useEffect} from 'react'
+import Aos from 'aos'
 import 'aos/dist/aos.css'
 
 import 'boxicons/css/boxicons.min.css'
+import Navbar from './components/Navbar'
+import Hero from './sections/Hero'
 
 export default function App() {
   useEffect(() => {
@@ -19,7 +21,8 @@ export default function App() {
 
   return (
     <>
-    <h1 className="text-purple-600">Hello World from @typicaldeveloper</h1>
+    <Navbar />
+    <Hero />
     </>
   )
 }
