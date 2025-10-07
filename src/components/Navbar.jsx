@@ -7,7 +7,7 @@ export default function Navbar({className}){
         <>
             <nav className={
                 cn(
-                    "flex-between custom-container py-3 sticky top-0 z-50 bg-white",
+                    "flex-between custom-container py-3 sticky top-0 z-50 bg-white shadow-md",
                     className
                 )
             }>
