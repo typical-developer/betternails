@@ -26,7 +26,7 @@ export default function NavItems({className}){
                         className
                     )
                 }>
-                    <Link path={path}>{label}</Link>
+                    <Link to={path}>{label}</Link>
                 </li>
             )}
             <li data-aos="fade-down" data-aos-delay="300">
