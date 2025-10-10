@@ -1,0 +1,66 @@
+import Section from "../components/Section";
+import SectionHeader from "../components/SectionHeader";
+import ServiceCard from "../components/ServiceCard";
+    const numberOfCards = [1,2,3,4,5,6]
+export default function Services() {
+
+    const services = [
+        {id: 1,
+        serviceName: "Acrylic Nail Set",
+        desc: "Full set of durable, customizable acrylic nails to achieve your desired length and shape.",
+        imgSrc: 'acrylic-nails',
+        price: 2500},
+
+        {id: 2,
+        serviceName: "Gel Polish Maicures",
+        desc: "Long-lasting gel polish application with proper nail prep for maximum durability and shine.",
+        imgSrc: 'gel-polish-manicure',
+        price: 2500},
+
+        {id: 3,
+        serviceName: "Nail Art",
+        desc: "Custom designs, from simple accents to elaborate artwork, tailored to your preferences.",
+        imgSrc: 'nail-art',
+        price: 2500},
+
+        {id: 4,
+        serviceName: "Nail Repairs",
+        desc: "Quick and effective repairs for broken or damaged nails to restore their appearance.",
+        imgSrc: 'nail-repairs',
+        price: 2500},
+
+        {id: 5,
+        serviceName: "Pedicures",
+        desc: "Relaxing foot treatment with exfoliation, massage, and polish application.",
+        imgSrc: 'pedicures',
+        price: 2500},
+
+        {id: 6,
+        serviceName: "Crystal & 3D Nail Art",
+        desc: "Premium nail art featuring crystals, charms, and 3D elements for special occasions.",
+        imgSrc: 'crystal-nail-art',
+        price: 2500},
+    ]
+
+    return(
+        <>
+        <Section className="bg-gray-50" sectionId="services">
+            <SectionHeader label="Our Services" className="top-18" />
+
+            <div className="absolute top-0 left-0 right-0 bottom-0 flex-center px-4">
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
+                    {services.map(({id,serviceName,desc,imgSrc,price}) => 
+                        <ServiceCard 
+                            key={id} 
+                            serviceName={serviceName}
+                            imgSrc={imgSrc} 
+                            desc={desc}
+                            price={price} />
+                    )}
+                </div>
+            </div>
+                    
+        </Section>
+        </>
+    );
+}

@@ -1,27 +1,9 @@
-# Navbar content
-- logo (nails by betty word mark)
-- About
-- Services
-- Gallery
-- Testiomials
-- Contact
-- FAQ
+# Spice up section Header
 
-# Pages (1)
-- Home 
-
-# Sections (Home Page)
-- Hero
-- About
-- Services
-- Gallery
-- Testiomials
-- Contact
-- FAQ
-
-# Things to source 
-- cursive font for 'Nails by Betty'
-- base font 
-
-
-
+# Get images for these services
+- acrylic nails
+- Gel Polish Manicures
+- Nail Art
+- Nail Repairs
+- Pedicures
+- Crystal & 3d nail art

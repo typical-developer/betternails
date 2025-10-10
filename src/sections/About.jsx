@@ -8,9 +8,11 @@ export default function About(){
         {id: 2, content: "Betty takes pride in providing a personalized experience for each client, ensuring that your nails don't just look beautiful, but remain healthy too. Her attention to detail and commitment to hygiene have earned her a loyal client base who trust her with their nail care needs."},
         {id: 3, content: "Whether you're looking for elegant, everyday nails or show-stopping designs for a special occasion, Betty's artistic flair and technical expertise will exceed your expectations."},
     ]
+
+
     return(
         <>
-            <Section sectionId="about" className="relative min-h-[100svh]" containerClassName="lg:px-0" >
+            <Section sectionId="about" className="" containerClassName="lg:px-0" >
 
                 <SectionHeader label="About Betty" />
 
