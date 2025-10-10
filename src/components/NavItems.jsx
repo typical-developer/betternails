@@ -26,7 +26,9 @@ export default function NavItems({className}){
                         className
                     )
                 }>
-                    <Link to={path}>{label}</Link>
+                    {/* <Link to={path}>{label}</Link> */}
+                    {/* Link would be used if the navitems go to different pages */}
+                    <a href={path}>{label}</a>
                 </li>
             )}
             <li data-aos="fade-down" data-aos-delay="300">
