@@ -4,9 +4,9 @@ import SectionHeader from "../components/SectionHeader";
 export default function About(){
 
     const aboutParagraphs = [
-        {id: 1, content: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio suscipit iusto quasi necessitatibus quia nisi quisquam dolorum illum odit inventore.'},
-        {id: 2, content: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio suscipit iusto quasi necessitatibus quia nisi quisquam dolorum illum odit inventore.'},
-        {id: 3, content: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio suscipit iusto quasi necessitatibus quia nisi quisquam dolorum illum odit inventore.'},
+        {id: 1, content: "With over 2 years of experience in the nail industry, Betty has established herself as one of the most skilled and creative nail technicians in the area. Certified in advanced nail techniques and dedicated to ongoing education in the latest trends."},
+        {id: 2, content: "Betty takes pride in providing a personalized experience for each client, ensuring that your nails don't just look beautiful, but remain healthy too. Her attention to detail and commitment to hygiene have earned her a loyal client base who trust her with their nail care needs."},
+        {id: 3, content: "Whether you're looking for elegant, everyday nails or show-stopping designs for a special occasion, Betty's artistic flair and technical expertise will exceed your expectations."},
     ]
     return(
         <>
@@ -15,11 +15,11 @@ export default function About(){
                 <SectionHeader label="About Betty" />
 
                 {/* zebra bg */}
-                <div className="absolute top-0 left-0 bottom-0 right-0 object-fill bg-cover bg-no-repeat bg-[url('./img/zebra-bg.png')] min-h-[100svh] opacity-7"></div>
+                <div className="absolute top-0 left-0 bottom-0 right-0 object-fill bg-cover bg-no-repeat bg-[url('./img/zebra-bg.png')] min-h-[100svh] opacity-10"></div>
 
                 {/* about content */}
                 <div className="absolute top-0 left-0 bottom-0 right-0  flex-center w-full">
-                    <div className="absolute lg:flex-between gap-20 px-4 lg:px-0 space-y-10">
+                    <div className="absolute lg:flex-between gap-20 px-4 lg:px-0 space-y-12">
                         {/* about image */}
                         <img src="./img/about.jpg" alt="about nails by betty" className="w-[350px] h-[350px] rounded-full"  />
 
