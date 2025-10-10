@@ -9,13 +9,13 @@ export default function Services() {
         serviceName: "Acrylic Nail Set",
         desc: "Full set of durable, customizable acrylic nails to achieve your desired length and shape.",
         imgSrc: 'acrylic-nails',
-        price: 2500},
+        price: 4500},
 
         {id: 2,
         serviceName: "Gel Polish Maicures",
         desc: "Long-lasting gel polish application with proper nail prep for maximum durability and shine.",
         imgSrc: 'gel-polish-manicure',
-        price: 2500},
+        price: 5000},
 
         {id: 3,
         serviceName: "Nail Art",
@@ -27,7 +27,7 @@ export default function Services() {
         serviceName: "Nail Repairs",
         desc: "Quick and effective repairs for broken or damaged nails to restore their appearance.",
         imgSrc: 'nail-repairs',
-        price: 2500},
+        price: 2000},
 
         {id: 5,
         serviceName: "Pedicures",
@@ -39,7 +39,7 @@ export default function Services() {
         serviceName: "Crystal & 3D Nail Art",
         desc: "Premium nail art featuring crystals, charms, and 3D elements for special occasions.",
         imgSrc: 'crystal-nail-art',
-        price: 2500},
+        price: 3500},
     ]
 
     return(
