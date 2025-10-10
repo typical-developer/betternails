@@ -8,43 +8,43 @@ export default function Services() {
         {id: 1,
         serviceName: "Acrylic Nail Set",
         desc: "Full set of durable, customizable acrylic nails to achieve your desired length and shape.",
-        imgSrc: 'acrylic-nails',
+        imgSrc: './img/acrylic-nails.jpg',
         price: 4500},
 
         {id: 2,
         serviceName: "Gel Polish Maicures",
         desc: "Long-lasting gel polish application with proper nail prep for maximum durability and shine.",
-        imgSrc: 'gel-polish-manicure',
+        imgSrc: './img/gel-polish-manicure.jpg',
         price: 5000},
 
         {id: 3,
         serviceName: "Nail Art",
         desc: "Custom designs, from simple accents to elaborate artwork, tailored to your preferences.",
-        imgSrc: 'nail-art',
+        imgSrc: './img/nail-art.jpg',
         price: 2500},
 
         {id: 4,
         serviceName: "Nail Repairs",
         desc: "Quick and effective repairs for broken or damaged nails to restore their appearance.",
-        imgSrc: 'nail-repairs',
+        imgSrc: './img/nail-repairs.jpg',
         price: 2000},
 
         {id: 5,
         serviceName: "Pedicures",
         desc: "Relaxing foot treatment with exfoliation, massage, and polish application.",
-        imgSrc: 'pedicures',
+        imgSrc: './img/pedicures.jpg',
         price: 2500},
 
         {id: 6,
         serviceName: "Crystal & 3D Nail Art",
         desc: "Premium nail art featuring crystals, charms, and 3D elements for special occasions.",
-        imgSrc: 'crystal-nail-art',
+        imgSrc: './img/crystal-nail-art.jpg',
         price: 3500},
     ]
 
     return(
         <>
-        <Section className="bg-gray-50" sectionId="services">
+        <Section className="bg-pink-50" sectionId="services">
             <SectionHeader label="Our Services" className="top-18" />
 
             <div className="absolute top-0 left-0 right-0 bottom-0 flex-center px-4">
