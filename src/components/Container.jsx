@@ -6,7 +6,7 @@ export default function Container({className,children}) {
             <div className={
                 cn(
                     "custom-container",
-                    {className}
+                    className
                 )
             }>
                 {children}

@@ -1,12 +1,11 @@
-import Container from "../components/Container";
+import Section from "../components/Section";
 import Logo from "../components/Logo";
 import { Button } from "../components/ui/button";
 
 export default function Hero() {
   return (
-    <section id="hero" className="mt-10">
-      <Container className="relative w-full h-screen overflow-hidden ">
-
+    <>
+    <Section sectionId="#hero" className="relative w-full h-screen overflow-hidden">
         <video
           autoPlay
           muted
@@ -32,8 +31,7 @@ export default function Hero() {
         </Button>
         
         </div>
-
-      </Container>
-    </section>
+    </Section>
+    </>
   );
 }
