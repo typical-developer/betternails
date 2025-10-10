@@ -19,20 +19,24 @@ export default function NavItems({className}){
 
     return(
         <>
-        <ul className="flex-center gap-6">
+        <ul className="flex-center gap-8">
             {navItems.map(({id,label,path}, delay) => 
                 <li data-aos="fade-down" data-aos-delay={delay * 50} key={id} className={
                     cn(
                         className
                     )
                 }>
-                    <Link path={path}>{label}</Link>
+                    {/* <Link to={path}>{label}</Link> */}
+                    {/* Link would be used if the navitems go to different pages */}
+                    <a href={path}>{label}</a>
                 </li>
             )}
-            <Button data-aos="fade-down" data-aos-delay="300" variant="solidPink">
-            <i className="bx bx-pencil text-base"></i>
-            Book Now
-            </Button>
+            <li data-aos="fade-down" data-aos-delay="300">
+                <Button variant="solidPink">
+                <i className="bx bx-pencil text-base"></i>
+                Book Now
+                </Button>
+            </li>
         </ul>
         </>
     );    

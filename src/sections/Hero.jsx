@@ -1,12 +1,11 @@
-import Container from "../components/Container";
+import Section from "../components/Section";
 import Logo from "../components/Logo";
 import { Button } from "../components/ui/button";
 
 export default function Hero() {
   return (
-    <section id="hero" className="mt-10">
-      <Container className="relative w-full h-screen overflow-hidden ">
-
+    <>
+    <Section sectionId="#hero" className="relative w-full h-screen overflow-hidden">
         <video
           autoPlay
           muted
@@ -21,8 +20,9 @@ export default function Hero() {
 
         <div className="absolute inset-0 bg-black/60"></div>
 
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center text-white w-full">
-        <h1 data-aos="fade-up" data-aos-delay="50" className="text-[min(8vw,125px)] font-bold overflow-hidden"><Logo /></h1>
+{/* data-aos="fade-up" data-aos-delay="50"  */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center text-white w-full space-y-2">
+        <h1 className="text-6xl lg:text-[min(8vw,125px)] font-logo font-bold overflow-hidden py-4">Nails By Betty</h1>
         <p className="text-lg max-w-md mx-auto">
             Experience luxury nail care that enhances your beauty and restores your confidence.
         </p>
@@ -32,8 +32,7 @@ export default function Hero() {
         </Button>
         
         </div>
-
-      </Container>
-    </section>
+    </Section>
+    </>
   );
 }
