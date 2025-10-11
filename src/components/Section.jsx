@@ -17,7 +17,12 @@ export default function Section({sectionId,className,containerClassName,sectionH
              
             <Container className={cn(
                 containerClassName)}>
-                {children}
+
+                    {/* This centers the content in each section */}
+                    <div className="absolute top-0 left-0 right-0 bottom-0 flex-center px-4">
+                        {children}
+                    </div>
+
             </Container>
         </section>
         </>

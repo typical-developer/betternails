@@ -46,7 +46,6 @@ export default function Services() {
         <>
         <Section className="bg-pink-50" sectionId="services" title={true} sectionTitle="Our Services">
 
-            <div className="absolute top-0 left-0 right-0 bottom-0 flex-center px-4">
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
                     {services.map(({id,serviceName,desc,imgSrc,price}) => 
                         <ServiceCard 
@@ -56,7 +55,6 @@ export default function Services() {
                             desc={desc}
                             price={price} />
                     )}
-                </div>
             </div>
                     
         </Section>
