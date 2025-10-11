@@ -1,4 +1,5 @@
 import Section from "../components/Section";
+import { Link } from "react-router-dom";
 
 //Shad cn ui Accordion
 import {
@@ -10,16 +11,42 @@ import {
 
 
 export default function Faq(){
+
+    //No need to put a question mark at the end of each question
+    const faqs = [
+        {id: 1,
+        itemValue: 'item-1',
+        question: 'How do I book an appointment',
+        answer: <>You can book an appointment directly through our website by clicking the "Book Now" button or by calling us at <Link className="text-pink-500" to="tel:07045942462">(+234) 7045-942-462</Link></>},
+
+        {id: 2,
+        itemValue: 'item-2',
+        question: 'What are your cancellation policies',
+        answer: <>We kindly ask for at least 24 hours notice if you need to cancel or reschedule your appointment.</>},
+
+        {id: 3,
+        itemValue: 'item-3',
+        question: 'Do you offer group bookings',
+        answer: <>Yes, we offer group bookings for special events. Please contact us for more details and to arrange a booking.</>},
+
+        {id: 4,
+        itemValue: 'item-4',
+        question: 'What payment methods do you accept',
+        answer: <>We accept cash, credit cards, and mobile payments for your convenience.</>},
+    ]
+
     return(
         <>
-        <Section title={true} sectionTitle="Frequently Asked Questions">
-        <Accordion type="single" collapsible>
-        <AccordionItem value="item-1">
-            <AccordionTrigger>Is it accessible?</AccordionTrigger>
-            <AccordionContent>
-            Yes. It adheres to the WAI-ARIA design pattern.
-            </AccordionContent>
-        </AccordionItem>
+        <Section sectionId="faq" title={true} sectionTitle="Frequently Asked Questions">
+        <Accordion type="single" collapsible className="space-y-4">
+        {faqs.map(({id,itemValue,question,answer}) =>
+            <AccordionItem value={itemValue}>
+                <AccordionTrigger className="min-w-[1000px] font-semibold text-lg">{question}?</AccordionTrigger>
+                <AccordionContent className="text-base max-w-[1000px] ring-b-pink-500">
+                {answer}
+                </AccordionContent>
+            </AccordionItem>        
+        )}
         </Accordion>
         </Section>
         </>
