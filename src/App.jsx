@@ -6,6 +6,8 @@ import 'boxicons/css/boxicons.min.css'
 import Navbar from './components/Navbar'
 import Hero from './sections/Hero'
 import About from './sections/About'
+import Services from './sections/Services'
+import Faq from './sections/Faq'
 
 export default function App() {
   useEffect(() => {
@@ -25,6 +27,8 @@ export default function App() {
     <Navbar />
     <Hero />
     <About />
+    <Services />
+    <Faq />
     </>
   )
 }
