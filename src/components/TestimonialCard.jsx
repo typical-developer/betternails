@@ -11,7 +11,7 @@ export default function TestimonialCard({
     return(
         <>
             <div className={cn(
-                "relative flex flex-col px-8 py-10 shadow-md rounded-sm bg-white transition-shadow duration-150 ease-out border-b-4 border-b-pink-300  gap-4",
+                "relative flex flex-col px-8 py-10 shadow-lg rounded-sm bg-white transition-shadow duration-150 ease-out border-b-4 border-b-pink-300  gap-4",
                 className
             )}>
 
