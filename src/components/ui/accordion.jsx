@@ -17,7 +17,7 @@ function AccordionItem({
   return (
     <AccordionPrimitive.Item
       data-slot="accordion-item"
-      className={cn("border-b border-pink-200 last:border-b-0", className)} //change border bottom color
+      className={cn("border-b last:border-b-0 border-pink-200", className)} //change border bottom color //add last:border-b-0 to remove border from the last accodion item
       {...props} />
   );
 }
@@ -38,7 +38,7 @@ function AccordionTrigger({
         {...props}>
         {children}
         <ChevronDownIcon
-          className="text-pink-500 pointer-events-none size-4 shrink-0 translate-y-0.5 transition-transform duration-200" /> 
+          className="text-pink-500 pointer-events-none size-5 shrink-0 translate-y-0.5 transition-transform duration-200" /> 
       </AccordionPrimitive.Trigger>
     </AccordionPrimitive.Header>
   );
