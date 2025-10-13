@@ -33,6 +33,11 @@ export default function Faq(){
         itemValue: 'item-4',
         question: 'What payment methods do you accept',
         answer: <>We accept cash, credit cards, and mobile payments for your convenience.</>},
+
+        {id: 5,
+        itemValue: 'item-5',
+        question: 'What days are you open for work',
+        answer: <>We are open Monday to Friday from 12pm to 4pm and but exceptions are made for special occasions like wedding preparations.</>},
     ]
 
     return(
