@@ -1,6 +1,6 @@
 import Section from "../components/Section";
-import Logo from "../components/Logo";
 import { Button } from "../components/ui/button";
+import bgVideo from "../assets/backgrounds/bg-vid.mp4"
 
 export default function Hero() {
   return (
@@ -14,7 +14,7 @@ export default function Hero() {
           className="absolute inset-0 w-full h-full object-cover"
         >
           
-          <source src="/videos/bg-vid.mp4" type="video/mp4" />
+          <source src={bgVideo} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 

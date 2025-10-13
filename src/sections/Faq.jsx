@@ -45,7 +45,7 @@ export default function Faq(){
         <Section sectionId="faq" title={true} sectionTitle="Frequently Asked Questions">
         <Accordion type="single" collapsible className="space-y-4">
         {faqs.map(({id,itemValue,question,answer}) =>
-            <AccordionItem value={itemValue}>
+            <AccordionItem key={id} value={itemValue}>
                 <AccordionTrigger className="min-w-[1000px] font-semibold text-lg">{question}?</AccordionTrigger>
                 <AccordionContent className="text-base max-w-[1000px] ring-b-pink-500">
                 {answer}

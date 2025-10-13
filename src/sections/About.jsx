@@ -1,4 +1,5 @@
 import Section from "../components/Section";
+import aboutBettyImage from "../assets/about-img/about.jpg"
 
 export default function About(){
 
@@ -20,7 +21,7 @@ export default function About(){
                 <div className="absolute top-0 left-0 bottom-0 right-0  flex-center w-full">
                     <div className="absolute max-w-[1200px] lg:flex-between gap-20 px-4 lg:px-0 space-y-12">
                         {/* about image */}
-                        <img src="./img/about.jpg" alt="about nails by betty" className="w-[350px] h-[350px] rounded-full"  />
+                        <img src={aboutBettyImage} alt="about nails by betty" className="w-[350px] h-[350px] rounded-full"  />
 
                         {/* about paragraphs */}
                         <div className="lg:max-w-xl space-y-4">

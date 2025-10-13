@@ -9,6 +9,9 @@ import nailRepairs from "../assets/service-img/nail-repairs.jpg"
 import pedicures from "../assets/service-img/pedicures.jpg"
 import crystalNailArt from "../assets/service-img/crystal-nail-art.jpg"
 
+//shadcb
+import { Skeleton } from "@/components/ui/skeleton"
+
 export default function Services() {
     const services = [
         {id: 1,
