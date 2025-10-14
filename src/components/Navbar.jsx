@@ -2,6 +2,7 @@ import cn from "../utils/cn";
 import Logo from "./Logo";
 import NavItems from "./NavItems"
 import Container from "./Container";
+import { Button } from "./ui/button";
 
 export default function Navbar({className,containerClassName}){
     return(
@@ -19,6 +20,9 @@ export default function Navbar({className,containerClassName}){
             )}>
                 <Logo className="text-black text-3xl font-extrabold  text-hover-to-pink" />
                 <NavItems className="hidden lg:flex text-hover-to-pink font-medium text-[15.5px]" />
+                <Button variant="hamburgerMenu">
+                    <i className="bx bx-menu text-black text-3xl"></i>
+                </Button>
             </Container>
 
             </nav>
