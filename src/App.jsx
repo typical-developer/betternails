@@ -33,7 +33,8 @@ export default function App() {
     <Navbar />
     <Hero />
     <About />
-{/*     <Services />
+    <Services />
+{/*     
     <Gallery />
     <Testimonials />
     <Contact />

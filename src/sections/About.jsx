@@ -22,7 +22,7 @@ export default function About(){
                 <div className="flex-center w-full lg:absolute lg:top-0 lg:left-0 lg:bottom-0 lg:right-0">
 
                     {/* absolute */}
-                    <div className="space-y-5 lg:space-y-12 lg:max-w-[1200px] lg:flex-between gap-20 py-8 px-0">
+                    <div className="space-y-5 lg:space-y-12 lg:max-w-[1200px] lg:flex-between gap-20 px-0">
 
                         <div className="flex-center">
                         {/* about image */}

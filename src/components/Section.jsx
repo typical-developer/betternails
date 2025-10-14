@@ -7,16 +7,19 @@ export default function Section({sectionId,className,containerClassName,sectionH
         <>
         {/* relative to keep bg image in place */}
         <section id={sectionId} className={cn(
-            'relative min-h-[100svh]',
+            'relative min-h-[100svh] py-8',
             className
         )}>
 
             {/* When title is set to true it will render this section header */}
             {title && <SectionHeader sectionTitle={sectionTitle} className={cn(
+                "top-8 lg:top-16",
                 sectionHeaderClassName
             )} />}
              
+             {/* mt-20 is to give space to the section headr on mobile */}
             <Container className={cn(
+                "mt-20 lg:mt-0",
                 containerClassName)}>
 
                     {/* This centers the content in each section */}
