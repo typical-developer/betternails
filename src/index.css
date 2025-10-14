@@ -1,8 +1,8 @@
-/* Google Font | Montserrat, Meow Script */
-@import url('https://fonts.googleapis.com/css2?family=Meow+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* Google Font | Montserrat, Meow Script, Mona Sans */
+@import url('https://fonts.googleapis.com/css2?family=Meow+Script&family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-  font-family: "Montserrat", system-ui, -apple-system;
+  font-family: "Mona Sans", system-ui, -apple-system;
   color: black;
 
   font-synthesis: none;

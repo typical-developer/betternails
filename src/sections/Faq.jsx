@@ -37,7 +37,7 @@ export default function Faq(){
         {id: 5,
         itemValue: 'item-5',
         question: 'What days are you open for work',
-        answer: <>We are open Monday to Friday from 12pm to 4pm and but exceptions are made for special occasions like wedding preparations.</>},
+        answer: <>We are open Monday to Friday from 9:00 AM - 7:00 PM and Saturday 10:00 AM - 5:00 PM but exceptions are made for special occasions like wedding preparations.</>},
     ]
 
     return(

@@ -15,7 +15,7 @@ export default function About(){
             <Section sectionId="about" className="" containerClassName="lg:px-0" title={true} sectionTitle="About Betty">
 
                 {/* zebra bg */}
-                <div className="absolute top-0 left-0 bottom-0 right-0 object-fill bg-cover bg-no-repeat bg-[url('./img/zebra-bg.png')] min-h-[100svh] opacity-10"></div>
+                <div className="absolute top-0 left-0 bottom-0 right-0 object-fill bg-cover bg-no-repeat bg-[url('./img/zebra-bg.png')] min-h-[100svh] opacity-9"></div>
 
                 {/* about content */}
                 <div className="absolute top-0 left-0 bottom-0 right-0  flex-center w-full">
@@ -24,9 +24,9 @@ export default function About(){
                         <img src={aboutBettyImage} alt="about nails by betty" className="w-[350px] h-[350px] rounded-full"  />
 
                         {/* about paragraphs */}
-                        <div className="lg:max-w-xl space-y-4">
-                            {aboutParagraphs.map(({id,content},delay) => 
-                                <p data-aos="fade-left" data-aos-delay={delay * 50} key={id} >{content}</p>
+                        <div data-aos="fade-left" data-aos-offset="120" className="lg:max-w-xl space-y-4 bg-white py-10 px-8 rounded-md shadow-md">
+                            {aboutParagraphs.map(({id,content}) => 
+                                <p key={id} >{content}</p>
                             )}
                         </div>
                     </div>                    

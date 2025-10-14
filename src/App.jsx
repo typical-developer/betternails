@@ -10,6 +10,8 @@ import About from './sections/About'
 import Services from './sections/Services'
 import Faq from './sections/Faq'
 import Testimonials from './sections/Testimonials'
+import Contact from "./sections/Contact"
+import Gallery from './sections/Gallery'
 
 export default function App() {
   useEffect(() => {
@@ -32,7 +34,9 @@ export default function App() {
     <Hero />
     <About />
     <Services />
+    <Gallery />
     <Testimonials />
+    <Contact />
     <Faq />
     <Footer />
     </>
