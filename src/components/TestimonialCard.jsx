@@ -26,7 +26,7 @@ export default function TestimonialCard({
                 </div>
                 
                 <div>
-                    <p className="text-sm">"<i>{quote}</i>"</p>
+                    <p className="text-sm">"{quote}"</p>
                 </div>
             </div>
         </>

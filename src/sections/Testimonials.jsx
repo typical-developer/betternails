@@ -74,6 +74,10 @@ export default function Testimonials() {
     return(
         <>
         <Section sectionId="testimonials" title={true} sectionTitle="Testimonials">
+
+            {/* wave bg */}
+            <div className="absolute top-0 left-0 bottom-0 right-0 object-fill bg-cover bg-no-repeat bg-[url('./img/wave-bg.png')] min-h-[100svh] opacity-5"></div>
+
             <Carousel
             plugins={[plugin.current]}
             className="w-full max-w-[1200px]"
@@ -91,8 +95,8 @@ export default function Testimonials() {
                 )}
 
             </CarouselContent>
-            <CarouselPrevious className="size-10 text-pink-500 font-extrabold" />
-            <CarouselNext className="size-10 text-pink-500 font-extrabold" />
+            <CarouselPrevious className="size-10 text-black font-extrabold" />
+            <CarouselNext className="size-10 text-black font-extrabold" />
             </Carousel>
         </Section>
         </>
