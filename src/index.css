@@ -160,5 +160,5 @@
 
 /* custom component classes */
 @utility custom-container {
-    @apply mx-auto container px-4 max-w-[1400px]
+    @apply mx-auto container px-4 max-w-[1400px] overflow-hidden
   }

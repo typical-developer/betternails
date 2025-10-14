@@ -15,15 +15,20 @@ const navItems = [
 
 
 
-export default function NavItems({className}){
+export default function NavItems({itemsClassName,className}){
 
     return(
         <>
-        <ul className="flex-center gap-8">
+        <ul className={
+            cn(
+            "flex-center gap-8 ",
+            className
+            )}>
             {navItems.map(({id,label,path}, delay) => 
                 <li data-aos="fade-down" data-aos-delay={delay * 50} key={id} className={
                     cn(
-                        className
+                        "text-hover-to-pink font-medium text-[15.5px]",
+                        itemsClassName
                     )
                 }>
                     {/* <Link to={path}>{label}</Link> */}
