@@ -80,7 +80,7 @@ export default function Testimonials() {
 
             <Carousel
             plugins={[plugin.current]}
-            className="w-full max-w-[1200px] min-h-[100svh] flex-center"
+            className="w-full max-w-[1200px]"
             >
             <CarouselContent className="-ml-0 flex gap-2">
                 {testimonials.map(({id,clientName,username,profilePic,quote}) =>
