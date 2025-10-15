@@ -19,11 +19,11 @@ export default function Navbar({className,containerClassName}){
                 containerClassName
             )}>
                 <Logo className="text-black text-3xl font-extrabold  text-hover-to-pink" />
-                <NavItems className="hidden lg:flex text-hover-to-pink font-medium text-[15.5px]" />
-                <Button variant="hamburgerMenu" className="flex-center"
+                <NavItems className="text-hover-to-pink font-medium text-[15.5px]" />
+{/*                 <Button variant="hamburgerMenu" className="flex-center"
                 size="icon">
                     <i className="bx bx-menu text-black text-3xl"></i>
-                </Button>
+                </Button> */}
             </Container>
 
             </nav>

@@ -27,7 +27,7 @@ export default function NavItems({itemsClassName,className}){
             {navItems.map(({id,label,path}, delay) => 
                 <li data-aos="fade-down" data-aos-delay={delay * 50} key={id} className={
                     cn(
-                        "text-hover-to-pink font-medium text-[15.5px]",
+                        "hidden lg:block text-hover-to-pink font-medium text-[15.5px]",
                         itemsClassName
                     )
                 }>

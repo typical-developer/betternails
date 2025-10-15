@@ -35,10 +35,8 @@ export default function App() {
     <About />
     <Services />
     <Gallery />
-{/*     <Testimonials /> */}
-{/*     
-    <Contact />
-     */}
+    <Testimonials />
+     <Contact />
      <Faq />
     <Footer />
     </>

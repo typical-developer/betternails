@@ -5,7 +5,7 @@ import { Textarea } from "@/components/ui/textarea"
 
 export default function ContactForm() {
   return (
-    <Card className="max-w-[1200px] w-[400px] mx-auto py-10 shadow-lg">
+    <Card className="max-w-[1200px] w-full lg:w-[400px] mx-auto py-10 shadow-lg">
       <CardHeader>
         <CardTitle className="text-center text-xl font-semibold">Contact Form</CardTitle>
       </CardHeader>
