@@ -73,14 +73,14 @@ export default function Testimonials() {
 
     return(
         <>
-        <Section sectionId="testimonials" title={true} sectionTitle="Testimonials">
+        <Section sectionId="testimonials" title={true} sectionTitle="Testimonials" className="h-auto">
 
             {/* wave bg */}
-            <div className="absolute top-0 left-0 bottom-0 right-0 object-fill bg-cover bg-no-repeat bg-[url('./img/wave-bg.png')] min-h-[100svh] opacity-5"></div>
+            <div className="absolute top-0 left-0 bottom-0 right-0 object-fill bg-cover bg-no-repeat bg-[url('./img/wave-bg.png')] lg:min-h-[100svh] opacity-5"></div>
 
             <Carousel
             plugins={[plugin.current]}
-            className="w-full max-w-[1200px] min-h-[100svh] flex-center"
+            className="w-full max-w-[1200px] lg:min-h-[100svh] lg:flex-center"
             >
             <CarouselContent className="-ml-0 flex gap-2">
                 {testimonials.map(({id,clientName,username,profilePic,quote}) =>
@@ -95,8 +95,8 @@ export default function Testimonials() {
                 )}
 
             </CarouselContent>
-            <CarouselPrevious className="size-10 text-black font-extrabold" />
-            <CarouselNext className="size-10 text-black font-extrabold" />
+            <CarouselPrevious className="hidden lg:block size-10 text-black font-extrabold" />
+            <CarouselNext className="hidden lg:block size-10 text-black font-extrabold" />
             </Carousel>
         </Section>
         </>
