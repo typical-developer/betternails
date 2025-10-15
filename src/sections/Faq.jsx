@@ -42,12 +42,12 @@ export default function Faq(){
 
     return(
         <>
-        <Section sectionId="faq" title={true} sectionTitle="Frequently Asked Questions">
-        <Accordion type="single" collapsible className="space-y-4">
+        <Section sectionId="faq" title={true} sectionTitle="Frequently Asked Questions" className="min-h-[50svh]">
+        <Accordion type="single" collapsible className="space-y-4 lg:min-h-[100svh] flex-col flex item-center justify-center">
         {faqs.map(({id,itemValue,question,answer}) =>
             <AccordionItem key={id} value={itemValue}>
-                <AccordionTrigger className="min-w-[1000px] font-semibold text-lg">{question}?</AccordionTrigger>
-                <AccordionContent className="text-base max-w-[1000px] ring-b-pink-500">
+                <AccordionTrigger className="lg:min-w-[1000px] font-semibold text-lg">{question}?</AccordionTrigger>
+                <AccordionContent className="text-base lg:max-w-[1000px] ring-b-pink-500">
                 {answer}
                 </AccordionContent>
             </AccordionItem>        
