@@ -33,8 +33,8 @@ export default function Contact(){
 
     return(
         <>
-        <Section className="" sectionId="contact" title={true} sectionTitle="Contact & Location" sectionHeaderClassName="top-5">
-            <div className="flex-between max-w-[1000px] w-full">
+        <Section className="" sectionId="contact" title={true} sectionTitle="Contact & Location" sectionHeaderClassName="lg:top-5">
+            <div className="lg:min-h-[100svh] space-y-8 lg:space-y-0 lg:flex-between max-w-[1000px] w-full">
 
                 {/* content */}
                 <div className="space-y-8">
@@ -63,7 +63,7 @@ export default function Contact(){
                     </div>
 
                     <div>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15903.349492365556!2d6.960064172744752!3d4.797956099635574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1069d1dfe970848f%3A0x8ee0fc876f3ecb7e!2sRivers%20State%20University!5e0!3m2!1sen!2sng!4v1760444462541!5m2!1sen!2sng" className="rounded-md w-md h-auto" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15903.349492365556!2d6.960064172744752!3d4.797956099635574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1069d1dfe970848f%3A0x8ee0fc876f3ecb7e!2sRivers%20State%20University!5e0!3m2!1sen!2sng!4v1760444462541!5m2!1sen!2sng" className="rounded-md w-1/1 lg:w-md h-auto" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
 

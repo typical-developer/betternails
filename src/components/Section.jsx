@@ -7,7 +7,7 @@ export default function Section({sectionId,className,containerClassName,sectionH
         <>
         {/* relative to keep bg image in place */}
         <section id={sectionId} className={cn(
-            'relative min-h-[100svh] py-8 lg:py-0',
+            'relative lg:min-h-[100svh] py-8 lg:py-0',
             className
         )}>
 

@@ -36,9 +36,7 @@ export default function App() {
     <Services />
     <Gallery />
 {/*     <Testimonials /> */}
-{/*     
-    <Contact />
-     */}
+     <Contact />
      <Faq />
     <Footer />
     </>
