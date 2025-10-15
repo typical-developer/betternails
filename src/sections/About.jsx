@@ -15,7 +15,7 @@ export default function About(){
             <Section sectionId="about" className="px-0" containerClassName="px-0" title={true} sectionTitle="About Betty">
 
                 {/* zebra bg */}
-                <div className="absolute top-0 left-0 bottom-0 right-0 object-fill bg-cover bg-no-repeat bg-[url('./img/zebra-bg.png')] min-h-[100svh] opacity-9"></div>
+                <div className="absolute top-0 left-0 bottom-0 right-0 object-fill bg-cover bg-no-repeat bg-[url('./public/img/zebra-bg.png')] min-h-[100svh] opacity-9"></div>
 
                 {/* about content */}
                 {/* absolute top-0 left-0 bottom-0 right-0  */} {/* this centers the content by making the w as big as the section then flexing it center */}

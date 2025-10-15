@@ -22,9 +22,13 @@ export default function Hero() {
 
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center text-white w-full space-y-2">
         <h1 data-aos="fade-up" data-aos-delay="50" className="text-6xl lg:text-[min(8vw,125px)] font-logo font-bold overflow-hidden py-4">Nails By Betty</h1>
-        <p className="text-lg max-w-md mx-auto">
+
+        <div className="flex-center">
+        <p className="text-lg w-[90%] max-w-md mx-auto">
             Experience luxury nail care that enhances your beauty and restores your confidence.
         </p>
+        </div>
+
         <Button variant="solidPink" className="mt-4 transition-color border border-transparent hover:border-white">
         <i className="bx bx-pencil text-base"></i>
         Book Now

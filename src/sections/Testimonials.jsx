@@ -76,7 +76,7 @@ export default function Testimonials() {
         <Section sectionId="testimonials" title={true} sectionTitle="Testimonials" className="h-auto">
 
             {/* wave bg */}
-            <div className="absolute top-0 left-0 bottom-0 right-0 object-fill bg-cover bg-no-repeat bg-[url('./img/wave-bg.png')] lg:min-h-[100svh] opacity-5"></div>
+            <div className="absolute top-0 left-0 bottom-0 right-0 object-fill bg-cover bg-no-repeat bg-[url('./public/img/wave-bg.png')] lg:min-h-[100svh] opacity-5"></div>
 
             <Carousel
             plugins={[plugin.current]}
