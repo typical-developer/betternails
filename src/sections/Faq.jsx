@@ -42,7 +42,7 @@ export default function Faq(){
 
     return(
         <>
-        <Section sectionId="faq" title={true} sectionTitle="Frequently Asked Questions" className="min-h-[50svh]">
+        <Section sectionId="faq" title={true} sectionTitle="Frequently Asked Questions" className="h-auto">
         <Accordion type="single" collapsible className="space-y-4 lg:min-h-[100svh] flex-col flex item-center justify-center">
         {faqs.map(({id,itemValue,question,answer}) =>
             <AccordionItem key={id} value={itemValue}>
