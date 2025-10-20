@@ -16,7 +16,8 @@ export function Calendar24() {
   const [date, setDate] = useState(undefined);
 
   return (
-    <div className="flex gap-4">
+    <div className="flex flex-col gap-4">
+      {/* date */}
       <div className="flex flex-col gap-3">
         <Label htmlFor="date-picker" className="px-1">
           Date
@@ -26,7 +27,7 @@ export function Calendar24() {
             <Button
               variant="outline"
               id="date-picker"
-              className="w-32 justify-between font-normal"
+              className="w-[100%] justify-between font-normal"
             >
               {date ? date.toLocaleDateString() : "Select date"}
               <ChevronDownIcon />
@@ -48,6 +49,8 @@ export function Calendar24() {
           </PopoverContent>
         </Popover>
       </div>
+
+      {/* time */}
       <div className="flex flex-col gap-3">
         <Label htmlFor="time-picker" className="px-1">
           Time
