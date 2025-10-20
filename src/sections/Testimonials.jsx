@@ -80,7 +80,7 @@ export default function Testimonials() {
 
             <Carousel
             plugins={[plugin.current]}
-            className="w-full max-w-[1200px] lg:min-h-[100svh] lg:flex-center"
+            className="w-full max-w-[85%] lg:max-w-[90%] lg:min-h-[100svh] lg:flex-center"
             >
             <CarouselContent className="-ml-0 flex gap-2">
                 {testimonials.map(({id,clientName,username,profilePic,quote}) =>
@@ -95,8 +95,8 @@ export default function Testimonials() {
                 )}
 
             </CarouselContent>
-            <CarouselPrevious className="hidden lg:block size-10 text-black font-extrabold" />
-            <CarouselNext className="hidden lg:block size-10 text-black font-extrabold" />
+            <CarouselPrevious className="flex-center size-10 text-black font-extrabold" />
+            <CarouselNext className="flex-center size-10 text-black font-extrabold" />
             </Carousel>
         </Section>
         </>
