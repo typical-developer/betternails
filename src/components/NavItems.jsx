@@ -37,10 +37,12 @@ export default function NavItems({itemsClassName,className}){
                 </li>
             )}
             <li data-aos="fade-down" data-aos-delay="300">
+                <a href="#contact">
                 <Button variant="solidPink">
                 <i className="bx bx-pencil text-base"></i>
                 Book Now
                 </Button>
+                </a>
             </li>
         </ul>
         </>

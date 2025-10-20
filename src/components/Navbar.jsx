@@ -20,10 +20,6 @@ export default function Navbar({className,containerClassName}){
             )}>
                 <Logo className="text-black text-3xl font-extrabold  text-hover-to-pink" />
                 <NavItems className="text-hover-to-pink font-medium text-[15.5px]" />
-{/*                 <Button variant="hamburgerMenu" className="flex-center"
-                size="icon">
-                    <i className="bx bx-menu text-black text-3xl"></i>
-                </Button> */}
             </Container>
 
             </nav>

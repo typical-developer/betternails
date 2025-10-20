@@ -29,10 +29,12 @@ export default function Hero() {
         </p>
         </div>
 
+        <a href="#contact">
         <Button variant="solidPink" className="mt-4 transition-color border border-transparent hover:border-white">
         <i className="bx bx-pencil text-base"></i>
         Book Now
         </Button>
+        </a>
         
         </div>
     </Section>
