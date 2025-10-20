@@ -24,7 +24,7 @@ export default function Hero() {
         <h1 data-aos="fade-up" data-aos-delay="50" className="text-6xl lg:text-[min(8vw,125px)] font-logo font-bold overflow-hidden py-4">Nails By Betty</h1>
 
         <div className="flex-center">
-        <p className="text-lg w-[90%] max-w-md mx-auto">
+        <p className="text-center text-lg w-[80%] mx-auto">
             Experience luxury nail care that enhances your beauty and restores your confidence.
         </p>
         </div>
