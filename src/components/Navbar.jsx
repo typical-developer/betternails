@@ -19,7 +19,7 @@ export default function Navbar({className,containerClassName}){
                 containerClassName
             )}>
                 <Logo className="text-black text-3xl font-extrabold  text-hover-to-pink" />
-                <NavItems className="text-hover-to-pink font-medium text-[15.5px]" />
+                <NavItems className="font-medium text-[15.5px]" />
             </Container>
 
             </nav>
