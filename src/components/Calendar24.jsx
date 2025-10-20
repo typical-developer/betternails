@@ -19,15 +19,12 @@ export function Calendar24() {
     <div className="flex flex-col gap-4">
       {/* date */}
       <div className="flex flex-col gap-3">
-        <Label htmlFor="date-picker" className="px-1">
-          Date
-        </Label>
         <Popover open={open} onOpenChange={setOpen}>
           <PopoverTrigger asChild>
             <Button
               variant="outline"
               id="date-picker"
-              className="w-[100%] justify-between font-normal"
+              className="w-[100%] justify-between font-normal text-muted-foreground text-base"
             >
               {date ? date.toLocaleDateString() : "Select date"}
               <ChevronDownIcon />
@@ -52,15 +49,12 @@ export function Calendar24() {
 
       {/* time */}
       <div className="flex flex-col gap-3">
-        <Label htmlFor="time-picker" className="px-1">
-          Time
-        </Label>
         <Input
           type="time"
           id="time-picker"
           step="1"
-          defaultValue="10:30:00"
-          className="bg-background appearance-none [&::-webkit-calendar-picker-indicator]:hidden [&::-webkit-calendar-picker-indicator]:appearance-none"
+          defaultValue="09:00:00"
+          className="bg-background appearance-none [&::-webkit-calendar-picker-indicator]:hidden [&::-webkit-calendar-picker-indicator]:appearance-none text-muted-foreground text-base"
         />
       </div>
     </div>

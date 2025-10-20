@@ -17,7 +17,7 @@ import { Calendar24 } from "./Calendar24"
 export default function ContactForm() {
 
   return (
-    <Card className="max-w-[1200px] w-full lg:w-[400px] mx-auto py-10 shadow-lg">
+    <Card className="px-0 max-w-[1200px] w-full lg:w-[400px] mx-auto py-10 shadow-lg">
       <CardHeader>
         <CardTitle className="text-center text-xl font-semibold">Contact Form</CardTitle>
       </CardHeader>
@@ -30,10 +30,10 @@ export default function ContactForm() {
         >
           <Input type="text" name="name" placeholder="Your Name" required />
           <Input type="email" name="email" placeholder="Your Email" required />
-          <Textarea name="message" placeholder="Your Message" />
+          <Textarea name="message" placeholder="Your Message (Optional)" />
           <Select>
             <SelectTrigger className="w-full">
-              <SelectValue placeholder="Select a service" />
+              <SelectValue className="placeholder:text-base" placeholder="Select a service" />
             </SelectTrigger>
             <SelectContent>
               <SelectGroup>
