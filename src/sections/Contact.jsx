@@ -5,7 +5,7 @@ export default function Contact(){
     const contactInformation = [
         {id: 1,
         label: <><span>RSU Backgate, Port Harcourt, Rivers State</span></>,
-        icon:'bx bxs-phone'},
+        icon: 'bx bx-compass'},
 
         {id: 2,
         label: <><a href="tel:07045942462">(+234) 7045-942-461</a></>,
@@ -33,7 +33,7 @@ export default function Contact(){
 
     return(
         <>
-        <Section className="" sectionId="contact" title={true} sectionTitle="Contact & Location" sectionHeaderClassName="lg:top-5">
+        <Section className="px-0" sectionId="contact" title={true} sectionTitle="Contact & Location" sectionHeaderClassName="lg:top-5" containerClassName="px-0">
             <div className="lg:min-h-[100svh] space-y-8 lg:space-y-0 lg:flex-between max-w-[1000px] w-full">
 
                 {/* content */}
@@ -53,10 +53,10 @@ export default function Contact(){
                     <div>
                         <h4 className="mb-3 text-xl font-semibold text-black">Business Hours</h4>
                         <ul className="space-y-2">
-                            {contactInformation.map(({id,label,icon}) => 
+                            {businessHours.map(({id,openHours,day}) => 
                                 <li key={id} className="flex items-center gap-1.5 group">
-                                    <i className={`${icon} text-pink-500 text-xl`}></i>
-                                    <span className="group-hover:underline">{label}</span>
+                                    <i className={`bx bx-check-circle text-pink-500 text-xl`}></i>
+                                    <span>{day}: {openHours}</span>
                                 </li>
                             )}
                         </ul>                        
