@@ -5,7 +5,7 @@ export default function Container({className,children}) {
         <>
             <div className={
                 cn(
-                    "custom-container",
+                    "custom-container overfloe-x-hidden",
                     className
                 )
             }>
